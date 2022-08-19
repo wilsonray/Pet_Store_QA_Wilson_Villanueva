@@ -15,3 +15,5 @@ Feature: service client POST
     When method post
     Then status 201
     And match response == responsePost
+    And assert response.name == name
+    And assert response.job == job

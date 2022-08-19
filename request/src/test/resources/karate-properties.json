@@ -1,7 +1,15 @@
 {
   "dev" : {
     "url": "https://reqres.in/api/",
+
     "name": "morpheus",
-    "job": "leader"
+    "job": "leader",
+    "id": "483",
+    "createdAt": "2022-08-19T14:08:50.110Z",
+
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "email": "janet.weaver@reqres.in"
   }
 }
