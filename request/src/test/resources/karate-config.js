@@ -1,6 +1,6 @@
 function fn(){
     var env = karate.env;
-    var properties = read('classpath:karate-properties.json')
+    var properties = read('classpath:karate/karate-properties.json')
     if(!env){
         env ='dev';
     }
