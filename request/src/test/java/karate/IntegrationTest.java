@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import  java.util.Collection;
 import java.util.List;
 
-public class AllFeatureTest {
+public class IntegrationTest {
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
