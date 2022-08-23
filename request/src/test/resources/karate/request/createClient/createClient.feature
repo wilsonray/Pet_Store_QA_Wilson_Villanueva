@@ -26,8 +26,6 @@ Feature: service client POST
     And request <job>
     When  method post
     Then status 201
-    And match response == responsePost
-
 
     Examples:
       | job                                 |
