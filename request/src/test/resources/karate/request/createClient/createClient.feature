@@ -17,3 +17,22 @@ Feature: service client POST
     And match response == responsePost
     And assert response.name == name
     And assert response.job == job
+
+  Scenario Outline: validate with invalid data POST Method
+
+    * def responsePost = read('classpath:karate/request/createClient/responsePost.json')
+
+    Given path 'users'
+    And request <job>
+    When  method post
+    Then status 201
+    And match response == responsePost
+
+
+    Examples:
+      | job                                 |
+      | '787*'                              |
+      | 'kjoileodisoasojdasdjaisdjsidjaisd' |
+
+
+
