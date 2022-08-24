@@ -20,10 +20,9 @@ Feature: Service client Post
     * def requestLogin = read('classpath:karate/request/login/LoginBody.json')
     * set requestLogin.password = ""
     * def responseLogin = read('classpath:karate/request/login/ResponseLogin.json')
-    
+
     Given path 'login'
     And request requestLogin
     When  method post
     Then status 400
-
-    #And assert response.id == requestAddPet.id
+    
