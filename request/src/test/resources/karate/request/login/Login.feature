@@ -25,4 +25,3 @@ Feature: Service client Post
     And request requestLogin
     When  method post
     Then status 400
-    
